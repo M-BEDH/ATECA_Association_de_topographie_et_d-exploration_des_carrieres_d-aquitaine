@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Reprendre le diaporama lorsque la souris n'est plus dessus
     carousel.addEventListener('mouseout', function() {
-        interval = setInterval(diaporama, 3000);
+        interval = setInterval(diaporama, 2000);
     });
 
     // Ajouter des flèches pour faire défiler les photos
