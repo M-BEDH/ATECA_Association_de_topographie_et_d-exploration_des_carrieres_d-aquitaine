@@ -121,7 +121,6 @@ main .photosCarrieres img{
 	top: -75px;
 	margin: auto;
 	display: flex;
-	border: 1px solid red;
 }
 
 button {
@@ -130,7 +129,6 @@ button {
 	font-size: 17px;
 	color: #960505;
     margin: auto;
-	border : 3px solid #1f0480;
 }
 
 main .photosCarrieres a {
