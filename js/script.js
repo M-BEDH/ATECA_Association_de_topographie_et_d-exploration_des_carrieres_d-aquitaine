@@ -19,10 +19,6 @@ function createDiaporama(parent, images, descriptions) {
         img.title = "Cliquer pour Agrandir"; // Ajouter le message
         let figcaption = create("figcaption", figure, "", descriptions[i]);
 
-        // Agrandir l'image lorsque vous cliquez dessus
-        slide.addEventListener('click', function() {
-            this.style.transform = 'scale(1.5)';
-        });
     }
 }
     //On va créer la fonction qui va gérer le diaporama
@@ -35,8 +31,8 @@ function createDiaporama(parent, images, descriptions) {
     }
 
     //On appelle la fonction
-    let images = ["photo2.jpeg","photo3.jpeg", "photo4.jpeg", "photo5.jpeg", "photo6.jpeg", "photo7.jpeg", "photo8.jpeg", "photo9.jpeg", "photo10.jpeg", "photo11.jpeg", "photo12.jpeg", "photo13.jpeg", "photo14.jpeg", "photo15.jpeg"];
-    let descriptions = ["Exploration carrière souterraine", "Concrétions de calcaire", "Passage étroits", "Spéléologue et blocs de pierre soutenant le ciel de carrière", "Stalactites", "Stalactites et passage dans une autre salle", "Inscription laissée par les anciens", "Salle souterraine basse de plafond", "Voiture abandonée dans un couloir souterrain", "Carriere souterraine avec mur construit de blocs de pierre éffondré", "Passage étroit vers un niveau inférieur", "Concrétions", "Tas de guano (en noir)", "Inscriptions avec des noms et des dates", ""];
+    let images = ["photo1.jpeg","photo2.jpeg","photo3.jpeg", "photo4.jpeg", "photo5.jpeg", "photo6.jpeg", "photo7.jpeg", "photo8.jpeg", "photo9.jpeg", "photo10.jpeg", "photo11.jpeg", "photo12.jpeg", "photo13.jpeg", "photo14.jpeg", "photo15.jpeg"];
+    let descriptions = ["Orientation avec une carte du réseau faite par notre cartographe","Exploration carrière souterraine", "Concrétions de calcaire", "Passage étroits", "Spéléologue et blocs de pierre soutenant le ciel de carrière", "Stalactites", "Stalactites et passage dans une autre salle", "Inscription laissée par les anciens", "Salle souterraine basse de plafond", "Voiture abandonée dans un couloir souterrain", "Carriere souterraine avec mur construit de blocs de pierre éffondré", "Passage étroit vers un niveau inférieur", "Concrétions", "Tas de guano (en noir)", "Inscriptions avec des noms et des dates", ""];
     let carousel = document.getElementById("carousel");
     createDiaporama(carousel, images, descriptions);
 

@@ -116,16 +116,15 @@ main .photosCarrieres img{
 }
 
 figure {
-	width: 100%;
+	width: 90%;
 	height: 80%;
 }
 
 figcaption {
-	width: max-content;
-	margin: auto;
 	display: flex;
 	font-weight: bold;
 	position: relative;
+	justify-content: center;
 	top: 20px;
 }
 .controls {
