@@ -116,10 +116,12 @@ main .photosCarrieres img{
 }
 
 .controls {
-	position: absolute;
-	left: 38%;
-	width: 38%;
+	width: 70%;
+	position: relative;
+	top: -75px;
 	margin: auto;
+	display: flex;
+	border: 1px solid red;
 }
 
 button {
@@ -127,7 +129,8 @@ button {
 	background-color: #e8eee8;
 	font-size: 17px;
 	color: #960505;
-
+    margin: auto;
+	border : 3px solid #1f0480;
 }
 
 main .photosCarrieres a {
@@ -148,6 +151,8 @@ nav.navAccueil a {
 	font-weight: bold;
     color: #0d0daf;
 	margin-bottom: 30px;
+	position: relative;
+	top: 50px;
 }
 
 nav.navGallerie  a {
@@ -180,7 +185,8 @@ footer mark {
 		border-radius: 0;
 	}
 	main h2, h4, h5 {
-		margin-top: 50px;
+		margin-top: 35px;
+		font-size: 20px;
 	}
 
 	p {
@@ -196,14 +202,18 @@ footer mark {
 		}
 
 		main .photosCarrieres img  {
-			width: 60%;
+			width: 100%;
 			margin: auto;
 		}
 		.controls {
-			width: 80%;
+			width: 99%;
+		}
+		#carousel {
+			height: 300px;
+			margin-bottom: 15px;
 		}
 button {
-	width: 52%;
+	width: 60%;
 	margin: 0;
 }
 	footer {
