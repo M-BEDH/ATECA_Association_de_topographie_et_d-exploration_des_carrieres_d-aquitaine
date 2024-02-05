@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let slides = carousel.children;
     slides[index].classList.add("active");
 
-    let interval = setInterval(diaporama, 3000);
+    let interval = setInterval(diaporama, 2000);
 
     // Arrêter le diaporama lorsque la souris est dessus
     carousel.addEventListener('mouseover', function() {
