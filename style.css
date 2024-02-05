@@ -140,6 +140,7 @@ button {
 	font-size: 17px;
 	color: #960505;
 	margin: auto;
+	cursor: pointer;
 }
 
 main .photosCarrieres a {
@@ -154,12 +155,12 @@ main .photosCarrieresSouterraines {
 }
 
 nav.navAccueil a {
+	width: 30%;
+	margin: auto;
 	font-size: 17px;
 	display: flex;
-	justify-content: center;
 	font-weight: bold;
 	color: #0d0daf;
-	margin-bottom: 30px;
 	position: relative;
 	top: 50px;
 }
