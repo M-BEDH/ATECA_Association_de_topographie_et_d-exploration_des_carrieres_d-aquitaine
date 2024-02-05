@@ -1,0 +1,214 @@
+body {
+	margin: 0;
+	box-sizing: border-box;
+	background-color: #f1fff0;
+	font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+header {
+	background-image: url("images/TopographieCarriere.png");
+	height: 50vh;
+}
+
+header h1{
+	width: 80%;
+	margin: auto;
+	border-radius: 20px;
+	text-align: center;
+    padding: 20px;
+	color: #960505;
+	font-size: 33px;
+	line-height: 2;
+	background-color: #f1fff0;
+}
+
+header img {
+	width: 100%;
+	height: 100vh;
+	display: block;
+	margin: auto;
+	opacity: 0.3;
+}
+
+main {
+	width: 80%;
+	margin: auto;
+}
+
+main h2, h4, h5{
+	font-size: 25px;
+	color: #960505;
+	text-decoration: underline 3px;
+	margin-top: 80px;
+}
+
+ main h1.gallerie {
+	color: #960505;
+ 	text-align: center;
+ }
+
+main h3 {
+	margin-top: 50px;
+	}
+
+main .presentationAsso {
+	width: 100%;
+	text-align: center;
+}	
+
+main p {
+	width: 80%;
+	font-weight: bolder;
+	line-height: 1.6;
+}
+
+main mark {
+	background-color: #45c46d59;
+	color: red;
+}
+
+main .membresAsso {
+	line-height: 2;
+	font-weight: bolder;
+}
+
+main .photosCarrieres img{
+	width: 60%;
+	display: flex;
+	padding: 20px;
+	margin: auto;
+}
+
+#carousel {
+	height: 350px;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	margin-bottom: 30px;
+}
+
+#carousel div {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	transition: left 1s;
+}
+
+#carousel div img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+#carousel div.active {
+	left: 0;
+}
+
+#carousel div {
+	display: none;
+}
+
+#carousel div.active {
+	display: block;
+}
+
+.controls {
+	position: absolute;
+	left: 38%;
+	width: 38%;
+	margin: auto;
+}
+
+button {
+	width: 30%;
+	background-color: #e8eee8;
+	font-size: 17px;
+	color: #960505;
+
+}
+
+main .photosCarrieres a {
+	color: #960505;
+	display: flex;
+	justify-content: center;
+}
+
+main .photosCarrieresSouterraines {
+	width: 100%;
+	display: flex;
+}
+
+nav.navAccueil a {
+	font-size: 17px;
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+    color: #0d0daf;
+	margin-bottom: 30px;
+}
+
+nav.navGallerie  a {
+display: block;
+color: #0d0daf;
+padding: 30px;
+}
+
+footer {
+	display: flex;
+	width: 60%;
+	height: 100px;
+	margin: auto;
+	padding-top: 60px;
+	justify-content: center;
+}
+
+footer mark {
+	font-weight: bolder;
+	background-color: #f1fff0;
+}
+
+@media screen  and (min-width: 320px) and (max-width: 768px) {
+	header {
+			height: 50vh;
+	}
+	header h1 {
+		width: 90%;
+		font-size: 26px;
+		border-radius: 0;
+	}
+	main h2, h4, h5 {
+		margin-top: 50px;
+	}
+
+	p {
+		width: 95%;
+	}
+	header img {
+		width: 100%;
+		}
+		main .photosCarrieresSouterraines {
+			display: block;
+			width: 80%;
+			margin: auto;
+		}
+
+		main .photosCarrieres img  {
+			width: 60%;
+			margin: auto;
+		}
+		.controls {
+			width: 80%;
+		}
+button {
+	width: 52%;
+	margin: 0;
+}
+	footer {
+		margin-top: 50px;
+		width: 80%;
+	}
+	}
+
