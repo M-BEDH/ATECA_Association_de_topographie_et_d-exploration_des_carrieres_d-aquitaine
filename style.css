@@ -182,9 +182,13 @@ footer mark {
 		font-size: 26px;
 		border-radius: 0;
 	}
-	main h2, h4, h5 {
+	main h4, h5 {
 		margin-top: 35px;
 		font-size: 20px;
+	}
+	main h2 {
+		margin-top: 40px;
+		font-size: 25px;
 	}
 
 	p {
