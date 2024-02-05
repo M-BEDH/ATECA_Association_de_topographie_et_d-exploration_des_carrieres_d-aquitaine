@@ -15,7 +15,7 @@ header h1{
 	margin: auto;
 	border-radius: 20px;
 	text-align: center;
-    padding: 20px;
+	padding: 20px;
 	color: #960505;
 	font-size: 33px;
 	line-height: 2;
@@ -42,14 +42,14 @@ main h2, h4, h5{
 	margin-top: 80px;
 }
 
- main h1.gallerie {
+main h1.gallerie {
 	color: #960505;
- 	text-align: center;
- }
+	text-align: center;
+}
 
 main h3 {
 	margin-top: 50px;
-	}
+}
 
 main .presentationAsso {
 	width: 100%;
@@ -80,7 +80,7 @@ main .photosCarrieres img{
 }
 
 #carousel {
-	height: 350px;
+	height: 515px;
 	margin: auto;
 	overflow: hidden;
 	position: relative;
@@ -115,10 +115,23 @@ main .photosCarrieres img{
 	display: block;
 }
 
+figure {
+	width: 100%;
+	height: 80%;
+}
+
+figcaption {
+	width: max-content;
+	margin: auto;
+	display: flex;
+	font-weight: bold;
+	position: relative;
+	top: 20px;
+}
 .controls {
 	width: 70%;
 	position: relative;
-	top: -75px;
+	top: -63px;
 	margin: auto;
 	display: flex;
 }
@@ -128,7 +141,7 @@ button {
 	background-color: #e8eee8;
 	font-size: 17px;
 	color: #960505;
-    margin: auto;
+	margin: auto;
 }
 
 main .photosCarrieres a {
@@ -147,16 +160,16 @@ nav.navAccueil a {
 	display: flex;
 	justify-content: center;
 	font-weight: bold;
-    color: #0d0daf;
+	color: #0d0daf;
 	margin-bottom: 30px;
 	position: relative;
 	top: 50px;
 }
 
 nav.navGallerie  a {
-display: block;
-color: #0d0daf;
-padding: 30px;
+	display: block;
+	color: #0d0daf;
+	padding: 30px;
 }
 
 footer {
@@ -175,7 +188,7 @@ footer mark {
 
 @media screen  and (min-width: 320px) and (max-width: 768px) {
 	header {
-			height: 50vh;
+		height: 50vh;
 	}
 	header h1 {
 		width: 90%;
@@ -190,36 +203,47 @@ footer mark {
 		margin-top: 40px;
 		font-size: 25px;
 	}
-
+	
 	p {
 		width: 95%;
 	}
 	header img {
 		width: 100%;
-		}
-		main .photosCarrieresSouterraines {
-			display: block;
-			width: 80%;
-			margin: auto;
-		}
+	}
+	main .photosCarrieresSouterraines {
+		display: block;
+		width: 80%;
+		margin: auto;
+	}
+	
+	main .photosCarrieres img  {
+		width: 100%;
+		margin: auto;
+	}
 
-		main .photosCarrieres img  {
-			width: 100%;
-			margin: auto;
-		}
-		.controls {
-			width: 99%;
-		}
-		#carousel {
-			height: 300px;
-		}
-button {
-	width: 60%;
-	margin: 0;
-	font-size: 13px;
-}
+	.controls {
+		width: 99%;
+		top: -95px
+	}
+
+	#carousel {
+		height: 300px;
+	}
+	figure {
+		margin: auto;
+		height: 65%;
+	}
+	figcaption {
+		width: 90%;
+		font-size: 14px;
+	}
+	button {
+		width: 60%;
+		margin: 0;
+		font-size: 13px;
+	}
 	footer {
 		width: 80%;
 	}
-	}
+}
 
