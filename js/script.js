@@ -16,7 +16,6 @@ function createDiaporama(parent, images, descriptions) {
         let img = create("img", figure);
         img.src = 'images/' + images[i];
         img.alt = descriptions[i];
-        img.title = "Cliquer pour Agrandir"; // Ajouter le message
         let figcaption = create("figcaption", figure, "", descriptions[i]);
 
     }
