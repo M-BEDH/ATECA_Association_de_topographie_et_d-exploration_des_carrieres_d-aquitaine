@@ -84,7 +84,6 @@ main .photosCarrieres img{
 	margin: auto;
 	overflow: hidden;
 	position: relative;
-	cursor: pointer;
 	margin-bottom: 30px;
 }
 
@@ -184,6 +183,9 @@ footer mark {
 	font-weight: bolder;
 	background-color: #f1fff0;
 }
+
+
+/********************************* Media Queries *********************************/
 
 @media screen  and (min-width: 320px) and (max-width: 768px) {
 	header {
