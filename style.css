@@ -217,6 +217,9 @@ footer mark {
 	header img {
 		width: 100%;
 	}
+		nav.navAccueil a {
+		font-size: 15px;
+		}
 	main .photosCarrieresSouterraines {
 		display: block;
 		width: 80%;
