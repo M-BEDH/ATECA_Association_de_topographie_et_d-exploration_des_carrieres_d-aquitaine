@@ -123,6 +123,7 @@ main .photosCarrieres img{
 figure {
 	width: 90%;
 	height: 80%;
+	margin: auto;
 }
 
 figcaption {
