@@ -1,5 +1,6 @@
 body {
-	margin: 0;
+	width: 80%;
+	margin: auto;
 	box-sizing: border-box;
 	background-color: #f1fff0;
 	font-family:Verdana, Geneva, Tahoma, sans-serif
@@ -40,6 +41,11 @@ main h2, h4, h5{
 	color: #960505;
 	text-decoration: underline 3px;
 	margin-top: 80px;
+}
+
+main h5 {
+	display: flex;
+	justify-content: center;
 }
 
 main h1.gallerie {
@@ -155,14 +161,13 @@ main .photosCarrieresSouterraines {
 }
 
 nav.navAccueil a {
-	width: 30%;
-	margin: auto;
 	font-size: 17px;
 	display: flex;
+	justify-content: center;
 	font-weight: bold;
 	color: #0d0daf;
 	position: relative;
-	top: 50px;
+	top: 30px;
 }
 
 nav.navGallerie  a {
