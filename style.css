@@ -2,25 +2,26 @@ body {
 	width: 80%;
 	margin: auto;
 	box-sizing: border-box;
-	background-color: #f1fff0;
+	background-color: #f1fff0c2;
 	font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
 header {
 	background-image: url("images/TopographieCarriere.png");
 	height: 50vh;
+	border-radius: 0 0 20px 20px;
 }
 
 header h1{
-	width: 80%;
+	width: 90%;
 	margin: auto;
-	border-radius: 20px;
+	border-radius: 0 0 20px 20px; ;
 	text-align: center;
 	padding: 20px;
 	color: #960505;
 	font-size: 33px;
-	line-height: 2;
-	background-color: #f1fff0;
+	line-height: 1.45;
+	background-color: #f1fff0c2;
 }
 
 header img {
