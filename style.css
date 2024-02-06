@@ -195,6 +195,10 @@ footer mark {
 /********************************* Media Queries *********************************/
 
 @media screen  and (min-width: 320px) and (max-width: 768px) {
+	body {
+		width: 100%;
+	}
+	
 	header {
 		height: 50vh;
 	}
@@ -224,8 +228,7 @@ footer mark {
 		}
 	main .photosCarrieresSouterraines {
 		display: block;
-		width: 80%;
-		margin: auto;
+		width: 100%;
 	}
 	
 	main .photosCarrieres img  {
