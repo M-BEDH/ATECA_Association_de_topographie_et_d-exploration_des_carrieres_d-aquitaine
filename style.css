@@ -21,12 +21,12 @@ header {
 	height: 40vh;
 	border-radius: 0 0 20px 20px;
 	position: relative;
-	top: 50px;
+	top: 40px;
 }
 
 header h1 {
 	text-align: center;
-	font-size: 35px;
+	font-size: 30px;
 	position: relative;
 	top: -80px;
 	margin: 60px;
@@ -46,7 +46,7 @@ header img {
 }
 
 main {
-	width: 60%;
+	width: 75%;
 	margin: auto;
 }
 
@@ -55,8 +55,18 @@ h4,
 h5 {
 	font-size: 25px;
 	color: var(--main-color);
-	text-decoration: underline 3px;
 	margin-top: 80px;
+	margin-bottom: 50px;
+	text-shadow: 1px 0px 0px #3e4041;
+	box-shadow:  2px 2px 5px var(--third-color);
+	background-color: var(--fourth-color);
+	text-align: center;
+}
+
+main h3 {
+	width: max-content;
+	margin: auto;
+	text-align: center;
 }
 
 main h5 {
@@ -67,6 +77,7 @@ main h5 {
 main h1.gallerie {
 	color: var(--main-color);
 	text-align: center;
+	text-shadow: #3e4041 1px 0px 0px;
 }
 
 main .presentationAsso {
@@ -76,14 +87,16 @@ main .presentationAsso {
 
 main p {
 	width: 80%;
-	font-weight: bolder;
 	line-height: 1.6;
 }
 
 main mark {
-	background-color: var(--five-color);
 	color: red;
 	padding: 5px;
+	line-height: 2.3;
+	font-size: 15px;
+	box-shadow: inset 0 0 10px var(--second-color);
+	background-color: var(--fourth-color);
 }
 
 main .membresAsso {
@@ -99,7 +112,7 @@ main .photosCarrieres img {
 }
 
 #carousel {
-	height: 515px;
+	height: 535px;
 	margin: auto;
 	overflow: hidden;
 	position: relative;
@@ -109,10 +122,6 @@ main .photosCarrieres img {
 #carousel div {
 	width: 100%;
 	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 100%;
-	transition: left 1s;
 }
 
 #carousel div img {
@@ -148,19 +157,41 @@ figcaption {
 }
 
 .controls {
-	width: 70%;
+	width: 50%;
 	position: relative;
-	top: -63px;
+	top: -100px;
 	margin: auto;
 }
 
 button {
 	width: 30%;
-	background-color: #e8eee8;
-	font-size: 17px;
 	color: #960505;
-	margin: auto;
+	border: none;
+}
+
+.prev,
+.next {
+	position: absolute;
+	transform: translateY(-50%);
+	font-size: 15px;
 	cursor: pointer;
+	padding: 5px;
+	background-color: var(--fourth-color);
+	box-shadow: 1px 1px 5px 0px var(--third-color);
+}
+
+.next:hover,
+.prev:hover {
+	box-shadow: 1px 1px 3px 1px var(--third-color); 
+	color: #000000;
+}
+
+.prev {
+	left: 10px;
+}
+
+.next {
+	right: 10px;
 }
 
 main .photosCarrieres a {
@@ -214,7 +245,7 @@ section.contact {
 	align-items: center;
 	justify-content: center;
 	padding: 20px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 10px #0000001a;
 	background-color: #fff;
 	border-radius: 10px;
 }
@@ -250,32 +281,11 @@ section.contact {
 	top: 10px;
 	right: 20px;
 	font-size: 30px;
-	color: white;
+	color: #fff;
 	cursor: pointer;
 }
 
-.prev,
-.next {
-	position: absolute;
-	transform: translateY(-50%);
-	border: black 1px solid;
-	font-size: 17px;
-	cursor: pointer;
-	padding: 5px;
-}
 
-.next:hover,
-.prev:hover {
-	background-color: #fff;
-}
-
-.prev {
-	left: 10px;
-}
-
-.next {
-	right: 10px;
-}
 
 /********************************* Media Queries *********************************/
 

@@ -66,8 +66,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Ajout des boutons de navigation
     let controls = create("div", carousel.parentNode, "controls");
-    let prevButton = create("button", controls, "prev", "Photo Précédente");
-    let nextButton = create("button", controls, "next", "Photo Suivante");
+    let prevButton = create("button", controls, "prev", "Précédente");
+    let nextButton = create("button", controls, "next", "Suivante");
 
     prevButton.addEventListener("click", function () {
         slides[index].classList.remove("active");
