@@ -1,27 +1,40 @@
+:root {
+	--main-color: #d60606;
+	--second-color: #45c46d;
+	--third-color: #9fac9e;
+	--fourth-color: #f1fff0c2;
+	--five-color: #baf7ba;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	/* font-family: sans-serif; */
+}
+
 body {
-	width: 80%;
 	margin: auto;
 	box-sizing: border-box;
 	background-color: #f1fff0c2;
-	font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
 header {
+	width: 99%;
+	margin: auto;
 	background-image: url("images/TopographieCarriere.png");
-	height: 50vh;
+	height: 40vh;
 	border-radius: 0 0 20px 20px;
+	position: relative;
+	top: 50px;
 }
 
-header h1{
-	width: 90%;
-	margin: auto;
-	border-radius: 0 0 20px 20px; ;
+header h1 {
 	text-align: center;
-	padding: 20px;
-	color: #960505;
-	font-size: 33px;
-	line-height: 1.45;
-	background-color: #f1fff0c2;
+	font-size: 35px;
+	position: relative;
+	top: -80px;
+	margin: 60px;
+	text-shadow: #9fac9e 2px 2px 2px;
+}
+
+header h1 span {
+	color: var(--main-color);
 }
 
 header img {
@@ -33,13 +46,15 @@ header img {
 }
 
 main {
-	width: 80%;
+	width: 60%;
 	margin: auto;
 }
 
-main h2, h4, h5{
+main h2,
+h4,
+h5 {
 	font-size: 25px;
-	color: #960505;
+	color: var(--main-color);
 	text-decoration: underline 3px;
 	margin-top: 80px;
 }
@@ -50,7 +65,7 @@ main h5 {
 }
 
 main h1.gallerie {
-	color: #960505;
+	color: var(--main-color);
 	text-align: center;
 }
 
@@ -61,7 +76,7 @@ main h3 {
 main .presentationAsso {
 	width: 100%;
 	text-align: center;
-}	
+}
 
 main p {
 	width: 80%;
@@ -70,8 +85,9 @@ main p {
 }
 
 main mark {
-	background-color: #45c46d59;
+	background-color: var(--five-color);
 	color: red;
+	padding: 5px;
 }
 
 main .membresAsso {
@@ -79,7 +95,7 @@ main .membresAsso {
 	font-weight: bolder;
 }
 
-main .photosCarrieres img{
+main .photosCarrieres img {
 	width: 60%;
 	display: flex;
 	padding: 20px;
@@ -105,7 +121,7 @@ main .photosCarrieres img{
 
 #carousel div img {
 	width: 100%;
-	height: 100%;
+	height: 90%;
 	object-fit: contain;
 }
 
@@ -134,12 +150,12 @@ figcaption {
 	justify-content: center;
 	top: 20px;
 }
+
 .controls {
 	width: 70%;
 	position: relative;
 	top: -63px;
 	margin: auto;
-	display: flex;
 }
 
 button {
@@ -172,19 +188,16 @@ nav.navAccueil a {
 	top: 30px;
 }
 
-nav.navGallerie  a {
+nav.navGallerie a {
 	display: block;
 	color: #0d0daf;
 	padding: 30px;
 }
 
 footer {
-	display: flex;
-	width: 60%;
 	height: 100px;
-	margin: auto;
 	padding-top: 60px;
-	justify-content: center;
+	text-align: center;
 }
 
 footer mark {
@@ -192,46 +205,128 @@ footer mark {
 	background-color: #f1fff0;
 }
 
+footer span {
+	color: var(--main-color);
+	font-weight: bolder;
+}
+
+section.contact {
+	width: 50%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+
+#lightbox {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.lightbox-content {
+	position: relative;
+	max-width: 90%;
+	max-height: 90%;
+}
+
+.lightbox-img {
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+	margin: auto;
+}
+
+.close {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	font-size: 30px;
+	color: white;
+	cursor: pointer;
+}
+
+.prev,
+.next {
+	position: absolute;
+	transform: translateY(-50%);
+	border: black 1px solid;
+	font-size: 17px;
+	cursor: pointer;
+	padding: 5px;
+}
+
+.next:hover,
+.prev:hover {
+	background-color: #fff;
+}
+
+.prev {
+	left: 10px;
+}
+
+.next {
+	right: 10px;
+}
 
 /********************************* Media Queries *********************************/
 
-@media screen  and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 360px) and (max-width: 768px) {
 	body {
 		width: 100%;
 	}
 
 	header {
-		height: 50vh;
+		height: 20vh;
+		top: 0;
 	}
+
 	header h1 {
-		width: 90%;
 		font-size: 26px;
 		border-radius: 0;
+		top: 0;
 	}
-	main h4, h5 {
+
+	main h4,
+	h5 {
 		margin-top: 35px;
 		font-size: 20px;
 	}
+
 	main h2 {
-		margin-top: 40px;
 		font-size: 25px;
 	}
-	
+
 	p {
 		width: 95%;
 	}
+
 	header img {
 		width: 100%;
 	}
-		nav.navAccueil a {
+
+	nav.navAccueil a {
 		font-size: 15px;
-		}
+	}
+
 	main .photosCarrieresSouterraines {
 		display: block;
 		width: 100%;
 	}
-	
-	main .photosCarrieres img  {
+
+	main .photosCarrieres img {
 		width: 100%;
 		margin: auto;
 	}
@@ -243,23 +338,52 @@ footer mark {
 	#carousel {
 		height: 300px;
 	}
+
 	figure {
 		margin: auto;
 		height: 65%;
 	}
+
 	figcaption {
 		width: 90%;
 		font-size: 14px;
 	}
+
 	button {
-		width: 60%;
+		width: 40%;
 		margin: 0;
-		font-size: 13px;
 		position: relative;
 		top: 15px;
 	}
+
+	.next,
+	.prev {
+		font-size: 15px;
+		padding: 5px;
+	}
+
 	footer {
 		width: 80%;
+		margin: auto;
 	}
 }
 
+
+@media screen and (min-width: 260px) and (max-width: 359px) {
+	main p {
+		width: 0%;
+		margin: auto;
+	}
+
+	header {
+		background-image: none;
+		height: 20vh;
+		top: 0;
+	}
+
+	header h1 {
+		font-size: 26px;
+		border-radius: 0;
+		top: 0;
+	}
+}
